@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build: 
+      context: ./backend
+    container_name: artificialx_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app  
+      - ./backend/uploads:/app/uploads
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend:
+    build: 
+      context: ./frontend
+    container_name: artificialx_frontend
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./frontend:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - API_URL=http://backend:8000 
+    depends_on:
+      - backend
+    command: streamlit run app.py --server.address 0.0.0.0
