@@ -4,7 +4,11 @@
 ArtificialX Studio is a **containerized AutoML platform** that enables users to train, evaluate, and deploy machine learning models on tabular data through an intuitive web interface.
 
 ---
+**Detailed Blog** 
 
+https://medium.com/@shraddhatiwari345/how-i-built-artificialx-studio-ad2eef7fa659
+
+---
 ## ✨ Key Features
 
 - 📂 Upload CSV datasets  
