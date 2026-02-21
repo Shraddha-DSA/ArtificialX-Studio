@@ -1,4 +1,4 @@
-# ⬛ ArtificialX Studio  
+# ArtificialX Studio  
 ### Enterprise Machine Learning Workspace
 
 ArtificialX Studio is a **containerized AutoML platform** that enables users to train, evaluate, and deploy machine learning models on tabular data through an intuitive web interface.
