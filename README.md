@@ -75,9 +75,6 @@ cd artificialx-studio
 docker-compose up --build
 ```
 
-- 🌐 Frontend → http://localhost:8501  
-- 📘 Backend Docs → http://localhost:8000/docs  
-
 ---
 
 ## 🛠️ Run Locally (Without Docker)
